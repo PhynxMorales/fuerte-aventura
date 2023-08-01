@@ -26,10 +26,15 @@ p {
 
 .header-fa {
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
   padding: 0 3rem;
   position: fixed;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  top: 0;
+  left: 0;
 }
 .header-fa .nav-pills .nav-item {
   color: hsl(0, 0%, 100%) !important;
@@ -735,6 +740,25 @@ p {
 }
 
 @media screen and (max-width: 570px) {
+  #logo-fa {
+    width: 8rem;
+  }
+  .review__wrap {
+    padding: 1rem;
+  }
+  .carousel__row .banner__title {
+    margin-top: 3rem;
+  }
+  .header-fa {
+    padding: 0 1rem;
+    justify-content: space-between !important;
+  }
+  .header-fa__list {
+    display: none !important;
+  }
+  .container__banner .container__banner__item {
+    padding: 0 1rem;
+  }
   .container__preview__house .card__house .card__house__body .house__body__model {
     font-size: 1.2rem;
     letter-spacing: 1px;
@@ -772,6 +796,7 @@ p {
   }
   .container__preview__house {
     padding: 2rem 0;
+    overflow: hidden;
   }
   .container__blueprints .blueprints__title figure {
     height: 200px;
@@ -851,7 +876,7 @@ p {
     margin-bottom: 1rem;
   }
   .title_fa__banner {
-    font-size: 55px;
+    font-size: 50px;
   }
   .banner__controls {
     padding: 0 1rem 0rem 0;
