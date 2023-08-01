@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <title>Fuerte Ventura</title>
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="videoFuerteAventura" tabindex="-1" aria-labelledby="videoFuerteAventuraLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content position-relative">
+        <div class="modal-header position-absolute w-100 z-2">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body justify-content-center align-items-center d-flex p-0 m-0">
+          <video class="w-100 rounded-1" controls>
+            <source loading="lazy" src="./assets/videos/Recorrido.mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header id="mainHeader" class="header-fa d-flex flex-wrap justify-content-center py-2 mb-4 align-items-center">
+    <a href="/"
+      class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none wow animate__animated animate__fadeInDown">
+      <img id="logo-fa" src="./assets/logo-blanco.png" alt="">
+    </a>
+
+    <ul class="nav nav-pills wow animate__animated animate__fadeInRight">
+      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">NOSOTROS</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">MODELOS</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">CONTACTO</a></li>
+    </ul>
+    <button class="navbar-toggler bg-menu" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g id="evaMenu2Fill0">
+          <g id="evaMenu2Fill1">
+            <g id="evaMenu2Fill2" fill="currentColor">
+              <circle cx="4" cy="12" r="1" />
+              <rect width="14" height="2" x="7" y="11" rx=".94" ry=".94" />
+              <rect width="18" height="2" x="3" y="16" rx=".94" ry=".94" />
+              <rect width="18" height="2" x="3" y="6" rx=".94" ry=".94" />
+            </g>
+          </g>
+        </g>
+      </svg>
+
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-fa" tabindex="-1" id="offcanvasNavbarDark"
+      aria-labelledby="offcanvasNavbarDarkLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title title_fa" id="offcanvasNavbarDarkLabel">Fuerte Aventura</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+      </div>
+    </div>
+  </header>
+
+  <section class="container-fluid container__banner">
+    <div class="carousel slide carousel-fade" id="carouselExampleFade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container__banner__item h-100">
+            <div class="row carousel__row">
+              <div class="col-12 col-md-4 col-xl-6 banner__title">
+                <div class="wow animate__animated animate__fadeInLeft">
+                  <span>Facíl es llegar aquí, difícil de irse</span>
+                  <h1 class="title_fa__banner">Encuentra tu nuevo hogar en San Luis Potosí</h1>
+                  <p class="subtitle_fa__baner">Encuentra tu hogar ideal: descubre nuestras casas a la venta y encuentra
+                    el lugar perfecto para ti
+                    y
+                    tu
+                    familia.
+                  </p>
+                  <button class="btn__primary_fa">
+                    <a href="">Solicita Informes</a>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container h-100">
+            <div class="row carousel__row">
+              <div class="col-12 col-md-4 col-xl-6 banner__title">
+                <div>
+                  <span>2 Facíl es llegar aquí, difícil de irse</span>
+                  <h1 class="title_fa__banner">Encuentra tu nuevo hogar en San Luis Potosí</h1>
+                  <p>Encuentra tu hogar ideal: descubre nuestras casas a la venta y encuentra el lugar perfecto para ti
+                    y
+                    tu
+                    familia.
+                  </p>
+                  <button class="">
+                    <a href="">Solocita Informes</a>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner__controls">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g id="evaArrowUpFill0">
+              <g id="evaArrowUpFill1">
+                <path id="evaArrowUpFill2" fill="currentColor"
+                  d="M16.21 16H7.79a1.76 1.76 0 0 1-1.59-1a2.1 2.1 0 0 1 .26-2.21l4.21-5.1a1.76 1.76 0 0 1 2.66 0l4.21 5.1A2.1 2.1 0 0 1 17.8 15a1.76 1.76 0 0 1-1.59 1Z" />
+              </g>
+            </g>
+          </svg>
+        </span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g id="evaArrowUpFill0">
+              <g id="evaArrowUpFill1">
+                <path id="evaArrowUpFill2" fill="currentColor"
+                  d="M16.21 16H7.79a1.76 1.76 0 0 1-1.59-1a2.1 2.1 0 0 1 .26-2.21l4.21-5.1a1.76 1.76 0 0 1 2.66 0l4.21 5.1A2.1 2.1 0 0 1 17.8 15a1.76 1.76 0 0 1-1.59 1Z" />
+              </g>
+            </g>
+          </svg>
+        </span>
+
+      </button>
+    </div>
+
+  </section>
+
+  <section class="container container__advantage">
+    <div class="row advantage__wrap">
+      <div class="col-12 col-md-6 col-xl-6 advantage__title">
+        <h3 class="title_fa">La mejor ubicación para tu nueva residencia</h3>
+        <figure>
+          <img src="./assets/home/ventajas_1.jpeg" alt="Beneficios de comprar casa en San Luis Potosí">
+        </figure>
+      </div>
+      <div class="col-12 col-md-6 col-xl-6 advantage__description">
+        <p class="advantage__description__title">Un nuevo capítulo en tu vida comienza aquí: explora nuestra oferta de
+          casas y elige el escenario perfecto
+          para escribir
+          tu historia.</p>
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4 advantage__icon">
+            <div class="advantage__icon__card">
+              <div class="advantage__icon__card__header">
+                <span class="advantage__icon__image wow animate__animated animate__fadeInLeft">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                    <path fill="white" d="M7.5 8a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1Z" />
+                    <path fill="white" fill-rule="evenodd"
+                      d="m12 6.191l-4-2V3h3V0H7v4.191l-4 2V8H1v6H0v1h6v-4h3v4h6v-1h-1V8h-2V6.191ZM13 14V9h-1v5h1ZM3 14H2V9h1v5Zm3-5.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"
+                      clip-rule="evenodd" />
+                    <path fill="white" d="M8 15v-3H7v3h1Z" />
+                  </svg>
+                </span>
+                <p class="advantage__icon__paragraph">Escuelas</p>
+              </div>
+              <div class="advantage__icon__card__footer wow animate__animated animate__fadeIn">
+                <p>Educación de calidad a tu alcance: Nuestras casas se encuentran estratégicamente ubicadas cerca de
+                  reconocidas escuelas
+                  y centros educativos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 advantage__icon">
+            <div class="advantage__icon__card">
+              <div class="advantage__icon__card__header">
+                <span class="advantage__icon__image wow animate__animated animate__fadeInUp">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+                    <path fill="white"
+                      d="M289.4 18c-1.2 1.9-1.9 3.91-2.3 5.99c-1.4 8.93 4.9 18.7 17.5 26.87c-40.4 19.75-61.8 52.14-52.5 79.74c7.7 22.9 35.3 38.4 71.8 40.3c-3.1 28.7 14.9 50.2 41 48.8c9.2-.5 18.6-3.9 27.2-9.7c11.7 13.7 25.5 21 39.9 21c15.9 0 31.3-9.1 43.8-25.8c5.9 1.4 12 2.1 18.2 1.9V18H289.4zm132.7 230.2L409.5 493h45l-12.6-244.8c-3.2.5-6.5.8-9.9.8c-3.4 0-6.7-.3-9.9-.8zM41 283v62h302v-62H41zm60 80v18h18v-18h-18zm164 0v18h18v-18h-18zM25 399v30h334v-30H25zm32 48v46h30v-46H57zm240 0v46h30v-46h-30z" />
+                  </svg>
+                </span>
+                <p class="advantage__icon__paragraph">Áreas verdes</p>
+              </div>
+              <div class="advantage__icon__card__footer wow animate__animated animate__fadeIn">
+                <p>Un oasis natural en tu propio vecindario: Imagina tener hermosas áreas verdes y parques a pocos pasos
+                  de tu casa.</p>
+              </div>
+            </div>
+            </p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 advantage__icon">
+            <div class="advantage__icon__card">
+              <div class="advantage__icon__card__header">
+                <span class="advantage__icon__image wow animate__animated animate__fadeInRight">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                    <path fill="white"
+                      d="M5.5 1L6 2h5l.5-1h-6zM6 2.5v1.25S6 6.5 8.5 6.5S11 3.75 11 3.75V2.5H6zM1.984 3.986A1 1 0 0 0 1 5v4a1 1 0 0 0 1.217.977L5 9.357V14l5.879-6.93a1.58 1.58 0 0 0-.438-.07H6.5L3 7.754V5a1 1 0 0 0-1.016-1.014zm9.764 3.725L6.412 14H12V8.559c0-.314-.094-.604-.252-.848z" />
+                  </svg>
+                </span>
+                <p class="advantage__icon__paragraph">Seguridad</p>
+              </div>
+              <div class="advantage__icon__card__footer wow animate__animated animate__fadeIn">
+                <p>Seguridad y tranquilidad para ti y los tuyos: Nuestras casas
+                  están
+                  ubicadas en
+                  vecindarios seguros y cuentan con sistemas de seguridad avanzados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container container__preview__house">
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-6 preview__house__titles " data->
+        <div id="carouselExample" class="carousel slide">
+          <div class="controls wow animate__animated animate__bounce" data-wow-delay="1s">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g id="evaArrowUpFill0">
+                  <g id="evaArrowUpFill1">
+                    <path id="evaArrowUpFill2" fill="currentColor"
+                      d="M16.21 16H7.79a1.76 1.76 0 0 1-1.59-1a2.1 2.1 0 0 1 .26-2.21l4.21-5.1a1.76 1.76 0 0 1 2.66 0l4.21 5.1A2.1 2.1 0 0 1 17.8 15a1.76 1.76 0 0 1-1.59 1Z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g id="evaArrowUpFill0">
+                  <g id="evaArrowUpFill1">
+                    <path id="evaArrowUpFill2" fill="currentColor"
+                      d="M16.21 16H7.79a1.76 1.76 0 0 1-1.59-1a2.1 2.1 0 0 1 .26-2.21l4.21-5.1a1.76 1.76 0 0 1 2.66 0l4.21 5.1A2.1 2.1 0 0 1 17.8 15a1.76 1.76 0 0 1-1.59 1Z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+
+            </button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card__house  wow animate__animated animate__fadeInLeft">
+                <div class="card__house__header">
+                  <figure>
+                    <img src="" alt="">
+                    <span></span>
+                  </figure>
+                </div>
+                <div class="card__house__body">
+                  <span class="house__body__price ">$ 60,000 <span>anuales</span></span>
+                  <span class="house__body__model">Modelos Canary</span>
+                </div>
+                <div class="card__house__footer">
+                  <div class="row">
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none">
+                              <path fill="currentColor"
+                                d="M20 14v-2H4v2c0 1.138.583 3.248 2.745 3.841c.37.102.787.159 1.255.159h8a4.71 4.71 0 0 0 1.255-.159C19.417 17.248 20 15.138 20 14z" />
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 12h1m16 0v0a1 1 0 0 0 1-1V7c0-1-.6-3-3-3s-3 2-3 3m5 5v2c0 1.138-.583 3.248-2.745 3.841M20 12H4m0 0v2c0 1.138.583 3.248 2.745 3.841M6 20l.745-2.159m0 0c.37.102.787.159 1.255.159h8a4.71 4.71 0 0 0 1.255-.159M18 20l-.745-2.159M15 7h-2m2 0h2" />
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="info">2 baños</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                              d="m4.007 9.105l6-5.333a3 3 0 0 1 3.986 0l6 5.333A3 3 0 0 1 21 11.347v9.903h1a.75.75 0 1 1 0 1.5H2a.75.75 0 0 1 0-1.5h1v-9.903a3 3 0 0 1 1.007-2.242ZM9.25 9a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5h-4A.75.75 0 0 1 9.25 9Zm4.802 2.25c.899 0 1.648 0 2.242.08c.628.084 1.195.27 1.65.726c.456.455.642 1.022.726 1.65c.08.594.08 1.344.08 2.242v5.302h-1.5V16c0-.964-.002-1.611-.067-2.095c-.062-.461-.169-.659-.3-.789c-.13-.13-.327-.237-.788-.3c-.483-.064-1.131-.066-2.095-.066h-4c-.964 0-1.612.002-2.095.067c-.461.062-.659.169-.789.3c-.13.13-.237.327-.3.788c-.064.484-.066 1.131-.066 2.095v5.25h-1.5v-5.302c0-.898 0-1.648.08-2.242c.084-.628.27-1.195.725-1.65c.456-.456 1.023-.642 1.65-.726c.595-.08 1.345-.08 2.243-.08h4.104ZM8.25 15.5a.75.75 0 0 1 .75-.75h6a.75.75 0 1 1 0 1.5H9a.75.75 0 0 1-.75-.75Zm0 3a.75.75 0 0 1 .75-.75h6a.75.75 0 1 1 0 1.5H9a.75.75 0 0 1-.75-.75Z"
+                              clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                        <span class="info">1 Garage</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                            <path fill="currentColor" fill-rule="evenodd"
+                              d="M.5 0a.5.5 0 0 0-.5.5v14a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V5h9.5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5H.5ZM1 4.075V1h3.075v3.075H1Zm0 .85V14h3v-1.075H2.75a.425.425 0 1 1 0-.85H4v-1.15H2.25a.425.425 0 0 1 0-.85H4v-1.15H2.75a.425.425 0 1 1 0-.85H4v-1.15H2.75a.425.425 0 1 1 0-.85H4v-1.15H1ZM4.925 4h1.15V2.75a.425.425 0 0 1 .85 0V4h1.15V2.75a.425.425 0 0 1 .85 0V4h1.15V2.25a.425.425 0 1 1 .85 0V4h1.15V2.75a.425.425 0 0 1 .85 0V4H14V1H4.925v3Z"
+                              clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                        <span class="info">200m2</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                              d="M19 7h-8v7H3V5H1v15h2v-3h18v3h2v-9a4 4 0 0 0-4-4M7 13a3 3 0 0 0 3-3a3 3 0 0 0-3-3a3 3 0 0 0-3 3a3 3 0 0 0 3 3Z" />
+                          </svg>
+                        </span>
+                        <span class="info">4 Habitaciones</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn__reserva"> Agenda una visita
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M480 128a64 64 0 0 0-64-64h-16V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 368 48v16H144V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 112 48v16H96a64 64 0 0 0-64 64v12a4 4 0 0 0 4 4h440a4 4 0 0 0 4-4ZM32 416a64 64 0 0 0 64 64h320a64 64 0 0 0 64-64V179a3 3 0 0 0-3-3H35a3 3 0 0 0-3 3Zm344-208a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Z" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card__house">
+                <div class="card__house__header">
+                  <figure>
+                    <img src="" alt="">
+                    <span></span>
+                  </figure>
+                </div>
+                <div class="card__house__body">
+                  <span class="house__body__price ">$ 60,000 <span>anuales</span></span>
+                  <span class="house__body__model">Modelo Tenerife</span>
+                </div>
+                <div class="card__house__footer">
+                  <div class="row">
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none">
+                              <path fill="currentColor"
+                                d="M20 14v-2H4v2c0 1.138.583 3.248 2.745 3.841c.37.102.787.159 1.255.159h8a4.71 4.71 0 0 0 1.255-.159C19.417 17.248 20 15.138 20 14z" />
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 12h1m16 0v0a1 1 0 0 0 1-1V7c0-1-.6-3-3-3s-3 2-3 3m5 5v2c0 1.138-.583 3.248-2.745 3.841M20 12H4m0 0v2c0 1.138.583 3.248 2.745 3.841M6 20l.745-2.159m0 0c.37.102.787.159 1.255.159h8a4.71 4.71 0 0 0 1.255-.159M18 20l-.745-2.159M15 7h-2m2 0h2" />
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="info">2 baños</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                              d="m4.007 9.105l6-5.333a3 3 0 0 1 3.986 0l6 5.333A3 3 0 0 1 21 11.347v9.903h1a.75.75 0 1 1 0 1.5H2a.75.75 0 0 1 0-1.5h1v-9.903a3 3 0 0 1 1.007-2.242ZM9.25 9a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5h-4A.75.75 0 0 1 9.25 9Zm4.802 2.25c.899 0 1.648 0 2.242.08c.628.084 1.195.27 1.65.726c.456.455.642 1.022.726 1.65c.08.594.08 1.344.08 2.242v5.302h-1.5V16c0-.964-.002-1.611-.067-2.095c-.062-.461-.169-.659-.3-.789c-.13-.13-.327-.237-.788-.3c-.483-.064-1.131-.066-2.095-.066h-4c-.964 0-1.612.002-2.095.067c-.461.062-.659.169-.789.3c-.13.13-.237.327-.3.788c-.064.484-.066 1.131-.066 2.095v5.25h-1.5v-5.302c0-.898 0-1.648.08-2.242c.084-.628.27-1.195.725-1.65c.456-.456 1.023-.642 1.65-.726c.595-.08 1.345-.08 2.243-.08h4.104ZM8.25 15.5a.75.75 0 0 1 .75-.75h6a.75.75 0 1 1 0 1.5H9a.75.75 0 0 1-.75-.75Zm0 3a.75.75 0 0 1 .75-.75h6a.75.75 0 1 1 0 1.5H9a.75.75 0 0 1-.75-.75Z"
+                              clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                        <span class="info">1 Garage</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                            <path fill="currentColor" fill-rule="evenodd"
+                              d="M.5 0a.5.5 0 0 0-.5.5v14a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V5h9.5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5H.5ZM1 4.075V1h3.075v3.075H1Zm0 .85V14h3v-1.075H2.75a.425.425 0 1 1 0-.85H4v-1.15H2.25a.425.425 0 0 1 0-.85H4v-1.15H2.75a.425.425 0 1 1 0-.85H4v-1.15H2.75a.425.425 0 1 1 0-.85H4v-1.15H1ZM4.925 4h1.15V2.75a.425.425 0 0 1 .85 0V4h1.15V2.75a.425.425 0 0 1 .85 0V4h1.15V2.25a.425.425 0 1 1 .85 0V4h1.15V2.75a.425.425 0 0 1 .85 0V4H14V1H4.925v3Z"
+                              clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                        <span class="info">200m2</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                              d="M19 7h-8v7H3V5H1v15h2v-3h18v3h2v-9a4 4 0 0 0-4-4M7 13a3 3 0 0 0 3-3a3 3 0 0 0-3-3a3 3 0 0 0-3 3a3 3 0 0 0 3 3Z" />
+                          </svg>
+                        </span>
+                        <span class="info">4 Habitaciones</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn__reserva"> Agenda una visita
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M480 128a64 64 0 0 0-64-64h-16V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 368 48v16H144V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 112 48v16H96a64 64 0 0 0-64 64v12a4 4 0 0 0 4 4h440a4 4 0 0 0 4-4ZM32 416a64 64 0 0 0 64 64h320a64 64 0 0 0 64-64V179a3 3 0 0 0-3-3H35a3 3 0 0 0-3 3Zm344-208a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Z" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card__house">
+                <div class="card__house__header">
+                  <figure>
+                    <img src="" alt="">
+                    <span></span>
+                  </figure>
+                </div>
+                <div class="card__house__body">
+                  <span class="house__body__price ">$ 60,000 <span>anuales</span></span>
+                  <span class="house__body__model">Modelo Las Palmas</span>
+                </div>
+                <div class="card__house__footer">
+                  <div class="row">
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none">
+                              <path fill="currentColor"
+                                d="M20 14v-2H4v2c0 1.138.583 3.248 2.745 3.841c.37.102.787.159 1.255.159h8a4.71 4.71 0 0 0 1.255-.159C19.417 17.248 20 15.138 20 14z" />
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 12h1m16 0v0a1 1 0 0 0 1-1V7c0-1-.6-3-3-3s-3 2-3 3m5 5v2c0 1.138-.583 3.248-2.745 3.841M20 12H4m0 0v2c0 1.138.583 3.248 2.745 3.841M6 20l.745-2.159m0 0c.37.102.787.159 1.255.159h8a4.71 4.71 0 0 0 1.255-.159M18 20l-.745-2.159M15 7h-2m2 0h2" />
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="info">2 baños</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                              d="m4.007 9.105l6-5.333a3 3 0 0 1 3.986 0l6 5.333A3 3 0 0 1 21 11.347v9.903h1a.75.75 0 1 1 0 1.5H2a.75.75 0 0 1 0-1.5h1v-9.903a3 3 0 0 1 1.007-2.242ZM9.25 9a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5h-4A.75.75 0 0 1 9.25 9Zm4.802 2.25c.899 0 1.648 0 2.242.08c.628.084 1.195.27 1.65.726c.456.455.642 1.022.726 1.65c.08.594.08 1.344.08 2.242v5.302h-1.5V16c0-.964-.002-1.611-.067-2.095c-.062-.461-.169-.659-.3-.789c-.13-.13-.327-.237-.788-.3c-.483-.064-1.131-.066-2.095-.066h-4c-.964 0-1.612.002-2.095.067c-.461.062-.659.169-.789.3c-.13.13-.237.327-.3.788c-.064.484-.066 1.131-.066 2.095v5.25h-1.5v-5.302c0-.898 0-1.648.08-2.242c.084-.628.27-1.195.725-1.65c.456-.456 1.023-.642 1.65-.726c.595-.08 1.345-.08 2.243-.08h4.104ZM8.25 15.5a.75.75 0 0 1 .75-.75h6a.75.75 0 1 1 0 1.5H9a.75.75 0 0 1-.75-.75Zm0 3a.75.75 0 0 1 .75-.75h6a.75.75 0 1 1 0 1.5H9a.75.75 0 0 1-.75-.75Z"
+                              clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                        <span class="info">1 Garage</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                            <path fill="currentColor" fill-rule="evenodd"
+                              d="M.5 0a.5.5 0 0 0-.5.5v14a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V5h9.5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5H.5ZM1 4.075V1h3.075v3.075H1Zm0 .85V14h3v-1.075H2.75a.425.425 0 1 1 0-.85H4v-1.15H2.25a.425.425 0 0 1 0-.85H4v-1.15H2.75a.425.425 0 1 1 0-.85H4v-1.15H2.75a.425.425 0 1 1 0-.85H4v-1.15H1ZM4.925 4h1.15V2.75a.425.425 0 0 1 .85 0V4h1.15V2.75a.425.425 0 0 1 .85 0V4h1.15V2.25a.425.425 0 1 1 .85 0V4h1.15V2.75a.425.425 0 0 1 .85 0V4H14V1H4.925v3Z"
+                              clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                        <span class="info">200m2</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                              d="M19 7h-8v7H3V5H1v15h2v-3h18v3h2v-9a4 4 0 0 0-4-4M7 13a3 3 0 0 0 3-3a3 3 0 0 0-3-3a3 3 0 0 0-3 3a3 3 0 0 0 3 3Z" />
+                          </svg>
+                        </span>
+                        <span class="info">4 Habitaciones</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn__reserva"> Agenda una visita
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M480 128a64 64 0 0 0-64-64h-16V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 368 48v16H144V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 112 48v16H96a64 64 0 0 0-64 64v12a4 4 0 0 0 4 4h440a4 4 0 0 0 4-4ZM32 416a64 64 0 0 0 64 64h320a64 64 0 0 0 64-64V179a3 3 0 0 0-3-3H35a3 3 0 0 0-3 3Zm344-208a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Z" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-12 col-md-6 col-xl-6 preview__house__image">
+        <div>
+          <h3 class="house__title title_fa wow animate__animated animate__fadeInRight ">Elige el <span>modelo</span> que
+            se adapte mejor a ti</h3>
+          <figure class="house__image">
+            <img src="./assets/home/house_demo_1.png" alt="Modelos de casas San Luis Potosí">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid container__gallery">
+    <div id="carouselExampleAutoplaying" class="carousel slide gallery" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-12 col-md-4 col-xl-4 gallery__card">
+              <div class="gallery__image">
+                <img src="./assets/home/gallery_1.jpeg" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-4 gallery__card">
+              <div class="gallery__image">
+                <img src="./assets/home/gallery_2.jpeg" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-4 gallery__card">
+              <div class="gallery__image">
+                <img src="./assets/home/gallery_3.jpeg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-12 col-md-4 col-xl-4 gallery__card">
+              <div class="gallery__image">
+                <img src="./assets/home/gallery_1.jpeg" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-4 gallery__card">
+              <div class="gallery__image">
+                <img src="./assets/home/gallery_2.jpeg" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-4 gallery__card">
+              <div class="gallery__image">
+                <img src="./assets/home/gallery_3.jpeg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="container-fluid container__inside">
+    <div class="row">
+      <div class="col-4">
+        <figure class="inside__card">
+          <img src="" alt="">
+        </figure>
+      </div>
+      <div class="col-4">
+        <figure class="inside__card">
+          <img src="" alt="">
+        </figure>
+      </div>
+      <div class="col-4">
+        <figure class="inside__card">
+          <img src="" alt="">
+        </figure>
+      </div>
+      <div class="col-12">
+        <div class="inside__controls"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container container__blueprints">
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-6 blueprints__title">
+        <h3 class="title_fa">Conoce tu proximo <span>hogar</span></h3>
+        <div class="row blueprints__icon">
+          <div class="col-6 col-md-3 col-xl-2 blueprints__icon__item">
+            <div class="icon__card ">
+              <span class="icon wow animate__animated animate__bounce" data-wow-delay="100ms">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <path fill="black" fill-rule="evenodd"
+                    d="M.5 0a.5.5 0 0 0-.5.5v14a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V5h9.5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5H.5ZM1 4.075V1h3.075v3.075H1Zm0 .85V14h3v-1.075H2.75a.425.425 0 1 1 0-.85H4v-1.15H2.25a.425.425 0 0 1 0-.85H4v-1.15H2.75a.425.425 0 1 1 0-.85H4v-1.15H2.75a.425.425 0 1 1 0-.85H4v-1.15H1ZM4.925 4h1.15V2.75a.425.425 0 0 1 .85 0V4h1.15V2.75a.425.425 0 0 1 .85 0V4h1.15V2.25a.425.425 0 1 1 .85 0V4h1.15V2.75a.425.425 0 0 1 .85 0V4H14V1H4.925v3Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+              <span class="advantage">290m2</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-xl-2 blueprints__icon__item">
+            <div class="icon__card ">
+              <span class="icon wow animate__animated animate__bounce" data-wow-delay="200ms">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="black"
+                    d="M9 22h8v-2.5c2.41-1.63 4-4.38 4-7.5V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v8H3c0 3.09 2 6 6 7.5V22m-3.71-8h13.42A7.017 7.017 0 0 1 15 18.33V20h-4v-1.67C9 18 5.86 15.91 5.29 14M15 4h4v8h-4V4m1 1v3h2V5h-2Z" />
+                </svg>
+              </span>
+              <span class="advantage">WC-2</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-xl-2 blueprints__icon__item">
+            <div class="icon__card ">
+              <span class="icon wow animate__animated animate__bounce" data-wow-delay="300ms">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="black" d="M3 22v-2h3.5v-4.5H11V11h4.5V6.5H20V3h2v5.5h-4.5V13H13v4.5H8.5V22H3Z" />
+                </svg>
+              </span>
+              <span class="advantage">Pisos - 3</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-xl-3 blueprints__icon__item">
+            <div class="icon__card ">
+              <span class="icon wow animate__animated animate__bounce" data-wow-delay="400ms">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="black"
+                    d="M19 7h-8v7H3V5H1v15h2v-3h18v3h2v-9a4 4 0 0 0-4-4M7 13a3 3 0 0 0 3-3a3 3 0 0 0-3-3a3 3 0 0 0-3 3a3 3 0 0 0 3 3Z" />
+                </svg>
+              </span>
+              <span class="advantage">Habitaciones - 4</span>
+            </div>
+          </div>
+        </div>
+        <p>Casas que te enamorarán: descubre nuestra exclusiva oferta de viviendas y déjate cautivar por su belleza y
+          encanto
+        </p>
+        <figure class="wow animate__animated animate__bounceInLeft">
+          <img src="./assets/home/inside_plane.jpeg" alt="Casa SLP interior">
+        </figure>
+      </div>
+      <div class="col-12 col-md-6 col-xl-6 blueprints__plane">
+        <figure class="wow animate__animated animate__bounceInRight">
+          <img src="./assets/home/plane_1.png" alt="Planos de casas san luis potosí">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="container container__video">
+    <div class="row video__wrap">
+      <div class="col-12 col-md-5 col-xl-5 video__titles wow animate__animated animate__backInLeft">
+        <figure>
+          <img src="./assets/home/logo_color.svg" alt="">
+        </figure>
+        <h3 class="title_fa">Sientete como en casa
+        </h3>
+        <span>
+          Da un recorrido
+        </span>
+      </div>
+      <div class="col-12 col-md-2 col-xl-2 video__play">
+        <div class="play__video wow animate__animated animate__pulse animate__repeat-3">
+          <a data-toggle="modal" data-bs-toggle="modal" data-bs-target="#videoFuerteAventura">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+              <mask id="ipSPlay0">
+                <g fill="none" stroke-linejoin="round" stroke-width="4">
+                  <path fill="#fff" stroke="#fff"
+                    d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z" />
+                  <path fill="#000" stroke="#000" d="M20 24v-6.928l6 3.464L32 24l-6 3.464l-6 3.464V24Z" />
+                </g>
+              </mask>
+              <path fill="white" d="M0 0h48v48H0z" mask="url(#ipSPlay0)" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container container__review">
+    <div class="row review__wrap carousel slide" id="reviewsBanner">
+      <div class="col-12 row review__titles">
+        <span class="col-12 col-md-2 col-xl-2 review__letter">
+          <span>"</span>
+        </span>
+        <div class="col-12 col-md-10 col-xl-10 review__title wow animate__animated animate__bounceInRight">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>La casa que visité superó mis expectativas. Estaba ubicada en un vecindario tranquilo y seguro,
+                perfecto mi
+                familia.
+                Además, tenía acceso a parques y áreas verdes, lo cual era ideal para pasar tiempo al aire libre. Sin
+                duda,
+                recomendaría
+                esta empresa a cualquiera que busque una casa en un entorno familiar y natural.</p>
+            </div>
+            <div class="carousel-item">
+              <p>2 La casa que visité superó mis expectativas. Estaba ubicada en un vecindario tranquilo y seguro,
+                perfecto mi
+                familia.
+                Además, tenía acceso a parques y áreas verdes, lo cual era ideal para pasar tiempo al aire libre. Sin
+                duda,
+                recomendaría
+                esta empresa a cualquiera que busque una casa en un entorno familiar y natural.</p>
+            </div>
+            <div class="carousel-item">
+              <p>3 La casa que visité superó mis expectativas. Estaba ubicada en un vecindario tranquilo y seguro,
+                perfecto mi
+                familia.
+                Además, tenía acceso a parques y áreas verdes, lo cual era ideal para pasar tiempo al aire libre. Sin
+                duda,
+                recomendaría
+                esta empresa a cualquiera que busque una casa en un entorno familiar y natural.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 row review__controls__wrap">
+        <div class="col-12 col-md-2 col-xl-2 review__controls wow animate__animated animate__bounceInUp">
+          <button class="carousel-control-prev" type="button" data-bs-target="#reviewsBanner" data-bs-slide="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <g id="evaArrowUpFill0">
+                <g id="evaArrowUpFill1">
+                  <path id="evaArrowUpFill2" fill="currentColor"
+                    d="M16.21 16H7.79a1.76 1.76 0 0 1-1.59-1a2.1 2.1 0 0 1 .26-2.21l4.21-5.1a1.76 1.76 0 0 1 2.66 0l4.21 5.1A2.1 2.1 0 0 1 17.8 15a1.76 1.76 0 0 1-1.59 1Z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#reviewsBanner" data-bs-slide="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <g id="evaArrowUpFill0">
+                <g id="evaArrowUpFill1">
+                  <path id="evaArrowUpFill2" fill="currentColor"
+                    d="M16.21 16H7.79a1.76 1.76 0 0 1-1.59-1a2.1 2.1 0 0 1 .26-2.21l4.21-5.1a1.76 1.76 0 0 1 2.66 0l4.21 5.1A2.1 2.1 0 0 1 17.8 15a1.76 1.76 0 0 1-1.59 1Z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+
+          </button>
+        </div>
+        <div class="col-12 col-md-10 col-xl-10 review__image">
+          <figure>
+            <img src="./assets/home/review_bg.png" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container container__contact">
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-6 contact__wrap__form">
+        <h2 class="title_fa mb-5">Contactanos</h2>
+        <form action="" method="post" class="contact__form wow animate__animated animate__bounceInDown ">
+          <div class="row">
+            <div class="col-6">
+              <input name="nombre" type="text" placeholder="Nombre Completo">
+            </div>
+            <div class="col-6">
+              <input name="correo" type="email" placeholder="Correo">
+            </div>
+            <div class="col-6">
+              <input name="celular" type="tel" placeholder="Celular">
+            </div>
+            <div class="col-6">
+              <select name="modeloCasa" id="">
+                <option value="" selected disabled>Modelo de casa</option>
+                <option value=""> Modelo 1</option>
+                <option value=""> Modelo 2</option>
+                <option value=""> Modelo 3</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="col-12 politicas">
+              <input type="checkbox" name="politicas" id="">
+              <p>Acepto las politicas del uso de mis datos</p>
+            </div>
+            <div class="col-12">
+              <button class="wow animate__animated animate__pulse animate__repeat-2" data-wow-delay="1s" type="submit"
+                value="Enviar">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-md-6 col-xl-6 contact__wrap__information">
+        <p>¡Obtén una cotización personalizada para la casa de tus sueños en tan solo unos minutos! te ofrecemos la
+          oportunidad de
+          descubrir el valor de tu inversión de forma rápida y sencilla.</p>
+        <iframe class="wow animate__animated animate__bounceInRight"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14777.94532339839!2d-101.0596285!3d22.1836168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9e8ff71e410b%3A0x65e95acc2041d38c!2sFuerteventura%20Residencial!5e0!3m2!1ses-419!2smx!4v1690164712869!5m2!1ses-419!2smx"
+          width="600" height="410" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid footer">
+    <footer class="row footer__wrap">
+      <div class="col-12 col-md-4 col-xl-4 information">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img src="./assets/home/logo_color.svg" alt="">
+        </a>
+        <p>Fuerteventura, pensado y diseñado para quienes buscan tranquilidad, comodidad y
+          accesibilidad media</p>
+        <div class="row">
+          <div class="col-3 col-md-1 col-xl-1 social__media">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+              <path fill="white"
+                d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6c44.2 0 82.1 3.3 93.2 4.8v107.9z" />
+            </svg>
+          </div>
+          <div class="col-3 col-md-1 col-xl-1 social__media">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="white"
+                d="M13.028 2.001a78.82 78.82 0 0 1 2.189.022l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.154a4.908 4.908 0 0 1 1.153 1.771c.247.637.415 1.364.465 2.428c.012.266.022.488.03.712l.006.194a79 79 0 0 1 .023 2.188l.001.746v1.31a78.836 78.836 0 0 1-.023 2.189l-.006.194c-.008.224-.018.445-.03.712c-.05 1.064-.22 1.79-.466 2.427a4.884 4.884 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-.267.012-.488.022-.712.03l-.194.006a79 79 0 0 1-2.189.023l-.746.001h-1.309a78.836 78.836 0 0 1-2.189-.023l-.194-.006a60.64 60.64 0 0 1-.712-.03c-1.064-.05-1.79-.22-2.428-.466a4.89 4.89 0 0 1-1.771-1.153a4.904 4.904 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.427a74.367 74.367 0 0 1-.03-.712l-.005-.194A79.053 79.053 0 0 1 2 13.028v-2.056a78.82 78.82 0 0 1 .022-2.188l.007-.194c.008-.224.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.88 4.88 0 0 1 3.68 3.68a4.897 4.897 0 0 1 1.77-1.155c.638-.247 1.363-.415 2.428-.465l.712-.03l.194-.005A79.053 79.053 0 0 1 10.972 2h2.056Zm-1.028 5A5 5 0 1 0 12 17a5 5 0 0 0 0-10Zm0 2A3 3 0 1 1 12.001 15a3 3 0 0 1 0-6Zm5.25-3.5a1.25 1.25 0 0 0 0 2.498a1.25 1.25 0 0 0 0-2.5Z" />
+            </svg>
+          </div>
+          <div class="col-3 col-md-1 col-xl-1 social__medial">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="white"
+                d="M21.99 6.547a10.59 10.59 0 0 0-.103-1.282a4.312 4.312 0 0 0-.363-1.09A3.853 3.853 0 0 0 19.83 2.48a4.299 4.299 0 0 0-1.083-.362a10.523 10.523 0 0 0-1.292-.105c-.183-.007-.42-.01-.53-.01L7.077 2c-.11 0-.347.003-.53.01a10.565 10.565 0 0 0-1.282.103a4.312 4.312 0 0 0-1.09.363A3.854 3.854 0 0 0 2.48 4.17a4.303 4.303 0 0 0-.362 1.083a10.545 10.545 0 0 0-.106 1.292c-.006.183-.01.42-.01.53L2 16.923c0 .11.003.347.01.53a10.565 10.565 0 0 0 .103 1.282a4.313 4.313 0 0 0 .363 1.09A3.854 3.854 0 0 0 4.17 21.52a4.305 4.305 0 0 0 1.083.362a10.52 10.52 0 0 0 1.292.105c.183.007.42.01.53.01l9.848.002c.11 0 .347-.003.53-.01a10.578 10.578 0 0 0 1.282-.103a4.316 4.316 0 0 0 1.09-.363a3.854 3.854 0 0 0 1.696-1.694a4.301 4.301 0 0 0 .362-1.083a10.533 10.533 0 0 0 .106-1.292c.006-.183.01-.42.01-.53L22 7.077c0-.11-.003-.347-.01-.53Zm-9.773 12.41h-.003a7.126 7.126 0 0 1-3.407-.868l-3.78.991l1.012-3.693a7.13 7.13 0 1 1 6.178 3.57Z" />
+              <path fill="white"
+                d="M12.22 5.901a5.927 5.927 0 0 0-5.023 9.076l.141.224l-.599 2.186l2.243-.588l.216.128a5.918 5.918 0 0 0 3.016.826h.003A5.926 5.926 0 0 0 12.219 5.9Zm3.484 8.47a1.834 1.834 0 0 1-1.202.847a2.443 2.443 0 0 1-1.122-.07a10.276 10.276 0 0 1-1.015-.376a7.94 7.94 0 0 1-3.043-2.689a3.463 3.463 0 0 1-.728-1.842a1.997 1.997 0 0 1 .624-1.485a.655.655 0 0 1 .475-.223c.118 0 .237 0 .341.006c.11.005.256-.042.4.306c.15.356.506 1.233.55 1.322a.328.328 0 0 1 .015.312a1.216 1.216 0 0 1-.178.297c-.09.104-.187.232-.267.312c-.09.089-.182.185-.079.363a5.366 5.366 0 0 0 .991 1.234a4.863 4.863 0 0 0 1.433.884c.178.09.282.074.386-.045s.445-.52.564-.698s.237-.148.4-.089s1.04.49 1.218.58s.297.133.341.207a1.488 1.488 0 0 1-.104.847Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-xl-4 location">
+        <h5>Agenda una visita</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="white"
+                  d="M12 2c-4.2 0-8 3.22-8 8.2c0 3.18 2.45 6.92 7.34 11.23c.38.33.95.33 1.33 0C17.55 17.12 20 13.38 20 10.2C20 5.22 16.2 2 12 2zm0 10c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2z" />
+              </svg>
+              GRAN CANARIA 131,
+              <span>
+                Mexquitic, Home Mexico
+              </span>
+
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="white"
+                  d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0a1 1 0 0 0 2 0z" />
+              </svg> +52 (444)
+              <span>843 83 15</span>
+
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="white"
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44z" />
+              </svg>
+              cotizaciones
+              <span>
+                @fuerteventura.com </span>
+
+            </a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4 col-xl-4 main__menu">
+        <h5>Contactanos</h5>
+        <ul class="nav flex-column ">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Sobre Nosotros</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Contactanos</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Modelos de casas</a></li>
+        </ul>
+      </div>
+    </footer>
+  </section>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
