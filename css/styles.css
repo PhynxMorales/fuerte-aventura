@@ -1,0 +1,868 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway/static/Raleway-ExtraBold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../assets/fonts/Raleway/static/Raleway-Regular.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Hammersmith-one";
+  src: url("../assets/fonts/Hammersmith_One/HammersmithOne-Regular.ttf");
+  font-weight: bold;
+}
+p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: transparent !important;
+  font-family: "Raleway" !important;
+}
+
+.header-fa {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding: 0 3rem;
+  position: fixed;
+}
+.header-fa .nav-pills .nav-item {
+  color: hsl(0, 0%, 100%) !important;
+  background: transparent !important;
+}
+.header-fa .nav-pills .nav-item .nav-link {
+  color: hsl(0, 0%, 100%) !important;
+  background: transparent !important;
+  font-family: "Raleway-Regular";
+}
+.header-fa .bg-menu {
+  display: grid;
+  place-items: center;
+  background-color: hsl(0, 0%, 100%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.header-fa .bg-menu svg {
+  width: 1.5em;
+  height: 1.5rem;
+}
+
+.nav-scroll {
+  transition: all 300ms ease-in;
+  background: hsl(0, 0%, 100%) !important;
+  box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.086);
+}
+.nav-scroll .nav-pills {
+  z-index: 10;
+}
+.nav-scroll .nav-pills .nav-item {
+  color: hsl(204, 94%, 27%) !important;
+}
+.nav-scroll .nav-pills .nav-item .nav-link {
+  color: hsl(204, 94%, 27%) !important;
+}
+
+.btn__primary_fa {
+  font-family: "Hammersmith-one";
+  color: #090909;
+  padding: 0.7em 1.7em;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px rgba(255, 255, 255, 0.2078431373);
+}
+.btn__primary_fa:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+.btn__primary_fa:hover {
+  box-shadow: 0px 0px 0px #c5c5c5, 0px 0px 0px rgba(255, 255, 255, 0.2078431373);
+}
+.btn__primary_fa a {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.text-bg-fa {
+  background-color: hsl(204, 94%, 27%) !important;
+  color: hsl(0, 0%, 100%) !important;
+}
+
+.btn__reserva {
+  font-family: "Hammersmith-one";
+  background: #ffffff;
+  color: hsl(0, 0%, 0%);
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  box-shadow: 0px 0px 10px #cfcfcf, 0px 0px 20px #ffffff;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 3em;
+  padding-right: 3.3em;
+  width: 60%;
+}
+.btn__reserva .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 10px;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #dcdcdc;
+  right: 0.3em;
+  transition: all 0.3s;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+.btn__reserva .icon:active {
+  transform: scale();
+}
+.btn__reserva .icon:hover {
+  width: calc(100% - 0.6em);
+  background-color: hsl(204, 94%, 27%);
+}
+.btn__reserva .icon:hover svg path {
+  fill: hsl(0, 0%, 100%);
+}
+.btn__reserva .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #0055c5;
+}
+.btn__reserva .icon svg:hover {
+  transform: translateX(0.1em);
+}
+
+.title_fa {
+  font-size: 2.3rem;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+.title_fa span {
+  color: hsl(204, 94%, 27%);
+}
+
+.title_fa__banner {
+  font-size: 75px;
+  font-family: "Raleway", sans-serif;
+}
+
+.subtitle_fa__baner {
+  font-size: 18px;
+}
+
+.container__banner {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.container__banner .container__banner__item {
+  padding: 0 5rem;
+}
+.container__banner .carousel,
+.container__banner .carousel-inner,
+.container__banner .carousel-item,
+.container__banner .carousel__row {
+  height: 100%;
+}
+.container__banner .carousel__row {
+  height: 100%;
+  justify-content: start;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+.container__banner .carousel-item {
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+}
+.container__banner .carousel-item span {
+  letter-spacing: 2px;
+}
+.container__banner .carousel-item:nth-child(1) {
+  background: url("../assets/home/banner_1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container__banner .carousel-item:nth-child(2) {
+  background: url("../assets/home/banner_2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container__banner .carousel-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(46, 46, 46, 0.2) 0%, rgba(24, 24, 24, 0.29) 59.9%, rgba(0, 0, 0, 0.38) 100%);
+  z-index: 0;
+}
+
+.banner__controls {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2.5rem 5rem 0;
+}
+.banner__controls .carousel-control-prev,
+.banner__controls .carousel-control-next {
+  position: relative;
+  background: hsl(0, 0%, 100%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 4;
+}
+.banner__controls .carousel-control-prev {
+  transform: rotate(270deg);
+}
+.banner__controls .carousel-control-next {
+  transform: rotate(90deg);
+}
+.banner__controls .carousel-control-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+}
+.banner__controls .carousel-control-icon path {
+  fill: hsl(0, 0%, 0%);
+}
+
+.container__advantage {
+  padding: 5rem 0;
+}
+.container__advantage .advantage__wrap {
+  background: hsl(0, 0%, 12%);
+  border-radius: 10px;
+  padding: 3rem 2rem 1rem 2rem;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.container__advantage .advantage__wrap .advantage__title {
+  height: 100%;
+}
+.container__advantage .advantage__wrap .advantage__title h3 {
+  margin-bottom: 2rem;
+}
+.container__advantage .advantage__wrap .advantage__title figure {
+  border-radius: 10px;
+  margin: 0;
+  background-color: aqua;
+  height: 280px;
+  overflow: hidden;
+}
+.container__advantage .advantage__wrap .advantage__title figure img {
+  width: 100%;
+  height: 100%;
+}
+.container__advantage .advantage__wrap .advantage__description .advantage__description__title {
+  padding: 1rem;
+}
+.container__advantage .advantage__wrap .advantage__description .advantage__icon .advantage__icon__card {
+  padding: 1rem;
+}
+.container__advantage .advantage__wrap .advantage__description .advantage__icon .advantage__icon__card .advantage__icon__card__header {
+  border-radius: 10px;
+  padding: 1.3rem;
+  background-color: rgba(217, 217, 217, 0.37);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container__advantage .advantage__wrap .advantage__description .advantage__icon .advantage__icon__card .advantage__icon__card__header .advantage__icon__image svg {
+  width: 3rem;
+  height: 3rem;
+}
+.container__advantage .advantage__wrap .advantage__description .advantage__icon .advantage__icon__card .advantage__icon__card__header .advantage__icon__paragraph {
+  margin: 0;
+  font-family: "Hammersmith-one";
+}
+.container__advantage .advantage__wrap .advantage__description .advantage__icon .advantage__icon__card .advantage__icon__card__footer p {
+  margin-top: 1rem;
+  font-size: 15px;
+}
+
+.container__preview__house {
+  padding: 5rem 0;
+}
+.container__preview__house .preview__house__titles .controls {
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.container__preview__house .preview__house__titles .controls .carousel-control-prev,
+.container__preview__house .preview__house__titles .controls .carousel-control-next {
+  position: relative;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 30px #cfcfcf, 0px 0px 20px #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 1;
+}
+.container__preview__house .preview__house__titles .controls .carousel-control-prev path,
+.container__preview__house .preview__house__titles .controls .carousel-control-next path {
+  fill: hsl(204, 94%, 27%);
+}
+.container__preview__house .preview__house__titles .controls .carousel-control-prev {
+  transform: rotate(270deg);
+}
+.container__preview__house .preview__house__titles .controls .carousel-control-next {
+  transform: rotate(90deg);
+}
+.container__preview__house .card__house {
+  padding: 1rem;
+  width: 500px;
+}
+.container__preview__house .card__house .card__house__header {
+  position: relative;
+}
+.container__preview__house .card__house .card__house__header figure {
+  background-color: #c5c5c5;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+.container__preview__house .card__house .card__house__header::after {
+  content: "En venta";
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  background: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.container__preview__house .card__house .card__house__body {
+  display: flex;
+  flex-direction: column;
+}
+.container__preview__house .card__house .card__house__body .house__body__price {
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.container__preview__house .card__house .card__house__body .house__body__price span {
+  font-size: 1rem;
+  color: #666;
+}
+.container__preview__house .card__house .card__house__body .house__body__model {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Raleway-Regular", sans-serif;
+}
+.container__preview__house .card__house .card__house__footer {
+  margin: 2rem 0;
+}
+.container__preview__house .card__house .card__house__footer .card__houses {
+  padding: 0;
+}
+.container__preview__house .card__house .card__house__footer .house__footer__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+}
+.container__preview__house .card__house .card__house__footer .house__footer__card:hover {
+  box-shadow: 0 0 10px 1px rgba(113, 113, 113, 0.329);
+}
+.container__preview__house .card__house .card__house__footer .house__footer__card .icon path {
+  fill: hsl(204, 94%, 27%);
+}
+.container__preview__house .card__house .card__house__footer .house__footer__card .icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+.container__preview__house .card__house .card__house__footer .house__footer__card .info {
+  font-size: 13px;
+}
+.container__preview__house .preview__house__image .house__title {
+  text-align: right;
+  padding: 0 0 0 10rem;
+}
+.container__preview__house .preview__house__image .house__image {
+  position: relative;
+}
+.container__preview__house .preview__house__image .house__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container__video {
+  padding: 6rem 0;
+}
+.container__video .video__wrap {
+  background: url("../assets/home/video_bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 8rem 0;
+  position: relative;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__video .video__wrap::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 9, 9, 0.537254902);
+  z-index: 10;
+}
+.container__video .video__wrap .video__titles {
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  z-index: 13;
+  text-align: left;
+  display: grid;
+  gap: 1rem;
+}
+.container__video .video__wrap .video__titles figure {
+  margin: 0;
+  width: 15rem;
+}
+.container__video .video__wrap .video__titles figure img {
+  width: 100%;
+  height: 100%;
+}
+.container__video .video__wrap .video__titles span {
+  font-size: 18px;
+}
+.container__video .video__wrap .video__play {
+  position: relative;
+  z-index: 12;
+}
+.container__video .video__wrap .video__play .play__video {
+  display: grid;
+  place-items: center;
+}
+.container__video .video__wrap .video__play .play__video a {
+  cursor: pointer;
+}
+.container__video .video__wrap .video__play .play__video a svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.container__blueprints .blueprints__title {
+  padding-right: 4rem;
+}
+.container__blueprints .blueprints__title .blueprints__icon {
+  padding: 2rem 0;
+}
+.container__blueprints .blueprints__title .blueprints__icon .icon__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container__blueprints .blueprints__title .blueprints__icon .icon__card .advantage {
+  font-size: 14px;
+}
+.container__blueprints .blueprints__title .blueprints__icon .icon__card .icon path {
+  fill: hsl(204, 94%, 27%);
+}
+.container__blueprints .blueprints__title .blueprints__icon .icon__card .icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+.container__blueprints .blueprints__title p {
+  margin: 1rem 0;
+}
+.container__blueprints .blueprints__title figure {
+  background-color: #090909;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container__blueprints .blueprints__title figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container__blueprints .blueprints__plane {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0;
+}
+.container__blueprints .blueprints__plane figure {
+  height: 100%;
+}
+.container__blueprints .blueprints__plane figure img {
+  padding-bottom: 2rem;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container__review {
+  padding: 6rem 0;
+}
+.container__review .review__wrap .review__titles {
+  justify-content: center;
+  align-items: end;
+}
+.container__review .review__wrap .review__titles .review__letter {
+  font-size: 6rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  transform: translateY(-10px);
+}
+.container__review .review__wrap .review__titles .review__letter span {
+  color: hsl(204, 94%, 27%);
+  font-family: "Raleway";
+}
+.container__review .review__wrap .review__titles .review__title {
+  line-height: 37px;
+  letter-spacing: 1px;
+  font-size: 23px;
+}
+.container__review .review__wrap .review__controls__wrap .review__image {
+  height: 100%;
+}
+.container__review .review__wrap .review__controls__wrap .review__image figure {
+  position: relative;
+}
+.container__review .review__wrap .review__controls__wrap .review__image figure img {
+  transform: translateY(-100px);
+  width: 100%;
+  height: 100%;
+}
+.container__review .review__wrap .review__controls {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 5rem 0 0 0;
+}
+.container__review .review__wrap .review__controls .carousel-control-prev,
+.container__review .review__wrap .review__controls .carousel-control-next {
+  position: relative;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 30px #cfcfcf, 0px 0px 20px #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 1;
+}
+.container__review .review__wrap .review__controls .carousel-control-prev path,
+.container__review .review__wrap .review__controls .carousel-control-next path {
+  fill: hsl(204, 94%, 27%);
+}
+.container__review .review__wrap .review__controls .carousel-control-prev {
+  transform: rotate(270deg);
+}
+.container__review .review__wrap .review__controls .carousel-control-next {
+  transform: rotate(90deg);
+}
+
+.container__contact .contact__wrap__form {
+  padding: 0 2rem;
+}
+.container__contact .contact__wrap__information {
+  margin-top: 2rem;
+}
+.container__contact .contact__form input,
+.container__contact .contact__form textarea,
+.container__contact .contact__form select {
+  border: 0;
+  background-color: #dbdbdb;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.container__contact .contact__form input::-moz-placeholder, .container__contact .contact__form textarea::-moz-placeholder, .container__contact .contact__form select::-moz-placeholder {
+  color: hsl(0, 0%, 0%);
+}
+.container__contact .contact__form input::placeholder,
+.container__contact .contact__form textarea::placeholder,
+.container__contact .contact__form select::placeholder {
+  color: hsl(0, 0%, 0%);
+}
+.container__contact .contact__form textarea {
+  min-height: 300px;
+  height: 300px;
+  max-height: 350px;
+}
+.container__contact .contact__form .politicas {
+  display: flex;
+  gap: 1rem;
+}
+.container__contact .contact__form .politicas input {
+  width: 20px !important;
+}
+.container__contact .contact__form button {
+  color: #090909;
+  padding: 0.7em 2em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: hsl(0, 0%, 0%);
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px rgba(255, 255, 255, 0.2078431373);
+}
+.container__contact .contact__form button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+.container__contact .contact__form button a {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.container__contact iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.footer {
+  background: #1e1e1e;
+  color: hsl(0, 0%, 100%);
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+.footer a {
+  color: hsl(0, 0%, 100%);
+}
+.footer .footer__wrap {
+  padding: 0 3rem;
+}
+.footer .information p {
+  padding-right: 10rem;
+}
+.footer .information .social__media svg {
+  width: 2rem;
+  height: 2rem;
+}
+.footer .location {
+  color: hsl(0, 0%, 100%);
+}
+.footer .location ul {
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.footer .location ul li {
+  color: hsl(0, 0%, 100%);
+}
+.footer .location ul li svg {
+  width: 1rem;
+  height: 1rem;
+}
+.footer .main__menu ul {
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.container__gallery {
+  margin: 10rem 0;
+  padding: 0 !important;
+  height: 100%;
+}
+.container__gallery .carousel-inner {
+  height: 100%;
+}
+.container__gallery .carousel-inner .carousel-item {
+  height: 100%;
+}
+.container__gallery .carousel-inner .carousel-item .row {
+  height: 100%;
+}
+.container__gallery .gallery {
+  overflow: hidden;
+}
+.container__gallery .gallery .gallery__image {
+  background-color: #c5c5c5;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container__gallery .gallery .gallery__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 570px) {
+  .container__preview__house .card__house .card__house__body .house__body__model {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: "Raleway-Regular", sans-serif;
+  }
+  .container__preview__house .card__house .card__house__body .house__body__price {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+  }
+  .container__gallery {
+    margin: 3rem 0;
+  }
+  .container__gallery .gallery .gallery__image img {
+    border-radius: 10px;
+    padding: 1rem;
+    background: #fff;
+  }
+  .gallery__card {
+    padding: 1rem;
+  }
+  .container__video {
+    padding: 2rem 0;
+  }
+  .container__preview__house .card__house .card__house__header figure {
+    background-color: #c5c5c5;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .container__advantage .advantage__wrap {
+    padding: 3rem 1rem 1rem 1rem;
+    border-radius: 0;
+  }
+  .container__preview__house {
+    padding: 2rem 0;
+  }
+  .container__blueprints .blueprints__title figure {
+    height: 200px;
+  }
+  .container__video .video__wrap .video__titles span {
+    font-family: "Hammersmith-one";
+  }
+  .container__review .review__wrap .review__controls__wrap .review__image figure img {
+    transform: translateY(-40px);
+    width: 100%;
+    height: 100%;
+  }
+  .container__review .review__wrap .review__controls {
+    padding: 1rem 0 0 0;
+  }
+  .container__review {
+    padding: 2rem 0;
+  }
+  .container__review {
+    padding: 1rem;
+  }
+  .container__contact .contact__wrap__form button {
+    width: 100%;
+  }
+  .container__contact .contact__wrap__form {
+    padding: 1rem;
+  }
+  .container__contact {
+    padding: 1rem;
+  }
+  .footer .footer__wrap {
+    padding: 0 2rem;
+  }
+  .footer .footer__wrap .main__menu h5,
+  .location h5,
+  .information h5 {
+    margin-top: 2rem !important;
+    font-family: "Raleway";
+  }
+  .footer .information p {
+    padding-right: 0rem;
+  }
+  .container__preview__house .preview__house__image .house__title {
+    text-align: right;
+    padding: 1rem;
+    transform: translateX(0%);
+  }
+  .container__preview__house .preview__house__image .house__image img {
+    transform: translateX(8%);
+    width: 100%;
+    height: 100%;
+  }
+  .container__gallery .gallery .gallery__image {
+    background-color: #c5c5c5;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .container__blueprints .blueprints__title .blueprints__icon .icon__card {
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__blueprints .blueprints__title {
+    padding: 1rem;
+  }
+  .container__video .video__wrap {
+    border-radius: 0;
+  }
+  .container__video .video__wrap .video__titles {
+    text-align: center;
+    gap: 1rem;
+    display: grid;
+    place-items: center;
+  }
+  .container__video .video__wrap .video__titles span {
+    margin-bottom: 1rem;
+  }
+  .title_fa__banner {
+    font-size: 55px;
+  }
+  .banner__controls {
+    padding: 0 1rem 0rem 0;
+  }
+  .container__preview__house .card__house {
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .btn__reserva {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

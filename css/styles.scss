@@ -1,0 +1,928 @@
+// Variable de colores
+$white: hsl(0, 0%, 100%);
+$dark: hsl(0, 0%, 0%);
+$grey: hsl(0, 0%, 12%);
+$dark_blue: hsl(204, 94%, 27%);
+$light_blue: hsl(204, 94%, 27%);
+//Fuentes
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway/static/Raleway-ExtraBold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../assets/fonts/Raleway/static/Raleway-Regular.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Hammersmith-one";
+  src: url("../assets/fonts/Hammersmith_One/HammersmithOne-Regular.ttf");
+  font-weight: bold;
+}
+p {
+  font-size: 18px;
+  margin: 0;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: transparent !important;
+  font-family: "Raleway" !important;
+}
+.header-fa {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding: 0 3rem;
+  position: fixed;
+  .nav-pills {
+    .nav-item {
+      color: $white !important;
+      background: transparent !important;
+      .nav-link {
+        color: $white !important;
+        background: transparent !important;
+        font-family: "Raleway-Regular";
+      }
+    }
+  }
+  .bg-menu {
+    display: grid;
+    place-items: center;
+    background-color: $white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    svg {
+      width: 1.5em;
+      height: 1.5rem;
+    }
+  }
+}
+
+.nav-scroll {
+  transition: all 300ms ease-in;
+  background: $white !important;
+  box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.086);
+  .nav-pills {
+    z-index: 10;
+    .nav-item {
+      color: $dark_blue !important;
+      .nav-link {
+        color: $dark_blue !important;
+      }
+    }
+  }
+}
+
+.btn__primary_fa {
+  font-family: "Hammersmith-one";
+  color: #090909;
+  padding: 0.7em 1.7em;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff35;
+  &:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
+  &:hover {
+    box-shadow: 0px 0px 0px #c5c5c5, -0px -0px 0px #ffffff35;
+  }
+  a {
+    text-decoration: none;
+    color: $dark;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+.text-bg-fa {
+  background-color: $dark_blue !important;
+  color: $white !important;
+}
+.btn__reserva {
+  font-family: "Hammersmith-one";
+  background: #ffffff;
+  color: $dark;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  box-shadow: 0px 0px 10px #cfcfcf, 0px 0px 20px #ffffff;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 3em;
+  padding-right: 3.3em;
+  width: 60%;
+  .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 10px;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #dcdcdc;
+    right: 0.3em;
+    transition: all 0.3s;
+    right: 0.3em;
+    transition: all 0.3s;
+    &:active {
+      transform: scale();
+    }
+    &:hover {
+      width: calc(100% - 0.6em);
+      background-color: $dark_blue;
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+    svg {
+      width: 1.1em;
+      transition: transform 0.3s;
+      color: #0055c5;
+      &:hover {
+        transform: translateX(0.1em);
+      }
+    }
+  }
+}
+.title_fa {
+  font-size: 2.3rem;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  span {
+    color: $dark_blue;
+  }
+}
+.title_fa__banner {
+  font-size: 75px;
+  font-family: "Raleway", sans-serif;
+}
+.subtitle_fa__baner {
+  font-size: 18px;
+}
+// Banner
+.container__banner {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  padding: 0 !important;
+  overflow: hidden;
+  .container__banner__item {
+    padding: 0 5rem;
+  }
+  .carousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel__row {
+    height: 100%;
+  }
+  .carousel__row {
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+  }
+  .carousel-item {
+    width: 100%;
+    color: $white;
+    span {
+      letter-spacing: 2px;
+    }
+    &:nth-child(1) {
+      background: url("../assets/home/banner_1.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &:nth-child(2) {
+      background: url("../assets/home/banner_2.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(46, 46, 46, 0.2) 0%,
+        rgba(24, 24, 24, 0.29) 59.9%,
+        rgba(0, 0, 0, 0.38) 100%
+      );
+      z-index: 0;
+    }
+  }
+}
+.banner__controls {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2.5rem 5rem 0;
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: relative;
+    background: $white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 4;
+  }
+  .carousel-control-prev {
+    transform: rotate(270deg);
+  }
+  .carousel-control-next {
+    transform: rotate(90deg);
+  }
+  .carousel-control-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+    path {
+      fill: $dark;
+    }
+  }
+}
+
+// Ventajas
+.container__advantage {
+  padding: 5rem 0;
+  .advantage__wrap {
+    background: $grey;
+    border-radius: 10px;
+    padding: 3rem 2rem 1rem 2rem;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    .advantage__title {
+      height: 100%;
+      h3 {
+        margin-bottom: 2rem;
+      }
+      figure {
+        border-radius: 10px;
+        margin: 0;
+        background-color: aqua;
+        height: 280px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .advantage__description {
+      .advantage__description__title {
+        padding: 1rem;
+      }
+      .advantage__icon {
+        .advantage__icon__card {
+          padding: 1rem;
+
+          .advantage__icon__card__header {
+            border-radius: 10px;
+            padding: 1.3rem;
+            background-color: rgba(217, 217, 217, 0.37);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            .advantage__icon__image {
+              svg {
+                width: 3rem;
+                height: 3rem;
+              }
+            }
+            .advantage__icon__paragraph {
+              margin: 0;
+              font-family: "Hammersmith-one";
+            }
+          }
+          .advantage__icon__card__footer {
+            p {
+              margin-top: 1rem;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Preview House
+.container__preview__house {
+  padding: 5rem 0;
+
+  .preview__house__titles {
+    .controls {
+      height: 100px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: row;
+      gap: 1rem;
+      .carousel-control-prev,
+      .carousel-control-next {
+        position: relative;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 0px 30px #cfcfcf, -0px -0px 20px #ffffff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        opacity: 1;
+        path {
+          fill: $dark_blue;
+        }
+      }
+      .carousel-control-prev {
+        transform: rotate(270deg);
+      }
+      .carousel-control-next {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  .card__house {
+    padding: 1rem;
+    width: 500px;
+    .card__house__header {
+      position: relative;
+      figure {
+        background-color: #c5c5c5;
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+      }
+      &::after {
+        content: "En venta";
+        padding: 0.5rem 1.2rem;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        background: $white;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    }
+    .card__house__body {
+      display: flex;
+      flex-direction: column;
+      .house__body__price {
+        font-size: 2.5rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        span {
+          font-size: 1rem;
+          color: #666;
+        }
+      }
+      .house__body__model {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: "Raleway-Regular", sans-serif;
+      }
+    }
+    .card__house__footer {
+      margin: 2rem 0;
+      .card__houses {
+        padding: 0;
+      }
+      .house__footer__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 10px;
+        &:hover {
+          box-shadow: 0 0 10px 1px rgba(113, 113, 113, 0.329);
+        }
+        .icon {
+          path {
+            fill: $dark_blue;
+          }
+          svg {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+        .info {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .preview__house__image {
+    .house__title {
+      text-align: right;
+      padding: 0 0 0 10rem;
+    }
+    .house__image {
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// Video
+.container__video {
+  padding: 6rem 0;
+
+  .video__wrap {
+    background: url("../assets/home/video_bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 8rem 0;
+    position: relative;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #09090989;
+      z-index: 10;
+    }
+    .video__titles {
+      color: $white;
+      position: relative;
+      z-index: 13;
+      text-align: left;
+      display: grid;
+      gap: 1rem;
+      figure {
+        margin: 0;
+        width: 15rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      span {
+        font-size: 18px;
+      }
+    }
+    .video__play {
+      position: relative;
+      z-index: 12;
+      .play__video {
+        display: grid;
+        place-items: center;
+        a {
+          cursor: pointer;
+          svg {
+            width: 4rem;
+            height: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+//Blueprints
+.container__blueprints {
+  .blueprints__title {
+    padding-right: 4rem;
+    .blueprints__icon {
+      padding: 2rem 0;
+      .icon__card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .advantage {
+          font-size: 14px;
+        }
+        .icon {
+          path {
+            fill: $dark_blue;
+          }
+          svg {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+    p {
+      margin: 1rem 0;
+    }
+    figure {
+      background-color: #090909;
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .blueprints__plane {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0;
+    figure {
+      height: 100%;
+      img {
+        padding-bottom: 2rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+//Reviews
+.container__review {
+  padding: 6rem 0;
+
+  .review__wrap {
+    .review__titles {
+      justify-content: center;
+      align-items: end;
+      .review__letter {
+        font-size: 6rem;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        transform: translateY(-10px);
+        span {
+          color: $dark_blue;
+          font-family: "Raleway";
+        }
+      }
+      .review__title {
+        line-height: 37px;
+        letter-spacing: 1px;
+        font-size: 23px;
+      }
+    }
+    .review__controls__wrap {
+      .review__image {
+        height: 100%;
+        figure {
+          position: relative;
+          img {
+            transform: translateY(-100px);
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .review__controls {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      padding: 5rem 0 0 0;
+      .carousel-control-prev,
+      .carousel-control-next {
+        position: relative;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 0px 30px #cfcfcf, -0px -0px 20px #ffffff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        opacity: 1;
+        path {
+          fill: $dark_blue;
+        }
+      }
+      .carousel-control-prev {
+        transform: rotate(270deg);
+      }
+      .carousel-control-next {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+// Contactanos
+.container__contact {
+  .contact__wrap__form {
+    padding: 0 2rem;
+  }
+  .contact__wrap__information {
+    margin-top: 2rem;
+  }
+  .contact__form {
+    input,
+    textarea,
+    select {
+      border: 0;
+      background-color: #dbdbdb;
+      padding: 1rem;
+      width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      &::placeholder {
+        color: $dark;
+      }
+    }
+    textarea {
+      min-height: 300px;
+      height: 300px;
+      max-height: 350px;
+    }
+    .politicas {
+      display: flex;
+      gap: 1rem;
+      input {
+        width: 20px !important;
+      }
+    }
+    button {
+      color: #090909;
+      padding: 0.7em 2em;
+      font-size: 18px;
+      border-radius: 0.5em;
+      background: $dark;
+      border: 1px solid #e8e8e8;
+      transition: all 0.3s;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: bold;
+      box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff35;
+      &:active {
+        color: #666;
+        box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+      }
+      a {
+        text-decoration: none;
+        color: $dark;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+  }
+  iframe {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+// Footer
+.footer {
+  background: #1e1e1e;
+  color: $white;
+  padding: 3rem 0;
+  margin-top: 4rem;
+  a {
+    color: $white;
+  }
+  .footer__wrap {
+    padding: 0 3rem;
+  }
+  .information {
+    p {
+      padding-right: 10rem;
+    }
+    .social__media {
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  .location {
+    color: $white;
+    ul {
+      gap: 1rem;
+      margin-top: 2rem;
+      li {
+        color: $white;
+        svg {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+    }
+  }
+  .main__menu {
+    ul {
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  }
+}
+
+// Gallery
+.container__gallery {
+  margin: 10rem 0;
+  padding: 0 !important;
+  height: 100%;
+  .carousel-inner {
+    height: 100%;
+    .carousel-item {
+      height: 100%;
+      .row {
+        height: 100%;
+      }
+    }
+  }
+  .gallery {
+    overflow: hidden;
+    .gallery__image {
+      background-color: #c5c5c5;
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+//mobile
+@media screen and (max-width: 570px) {
+  .container__preview__house
+    .card__house
+    .card__house__body
+    .house__body__model {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: "Raleway-Regular", sans-serif;
+  }
+  .container__preview__house
+    .card__house
+    .card__house__body
+    .house__body__price {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+  }
+  .container__gallery {
+    margin: 3rem 0;
+  }
+  .container__gallery .gallery .gallery__image img {
+    border-radius: 10px;
+    padding: 1rem;
+    background: #fff;
+  }
+  .gallery__card {
+    padding: 1rem;
+  }
+  .container__video {
+    padding: 2rem 0;
+  }
+  .container__preview__house .card__house .card__house__header figure {
+    background-color: #c5c5c5;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .container__advantage .advantage__wrap {
+    padding: 3rem 1rem 1rem 1rem;
+    border-radius: 0;
+  }
+  .container__preview__house {
+    padding: 2rem 0;
+  }
+  .container__blueprints .blueprints__title figure {
+    height: 200px;
+  }
+  .container__video .video__wrap .video__titles {
+    span {
+      font-family: "Hammersmith-one";
+    }
+  }
+  .container__review
+    .review__wrap
+    .review__controls__wrap
+    .review__image
+    figure
+    img {
+    transform: translateY(-40px);
+    width: 100%;
+    height: 100%;
+  }
+  .container__review .review__wrap .review__controls {
+    padding: 1rem 0 0 0;
+  }
+  .container__review {
+    padding: 2rem 0;
+  }
+  .container__review {
+    padding: 1rem;
+  }
+  .container__contact .contact__wrap__form button {
+    width: 100%;
+  }
+  .container__contact .contact__wrap__form {
+    padding: 1rem;
+  }
+  .container__contact {
+    padding: 1rem;
+  }
+  .footer .footer__wrap {
+    padding: 0 2rem;
+  }
+  .footer .footer__wrap .main__menu,
+  .location,
+  .information {
+    h5 {
+      margin-top: 2rem !important;
+      font-family: "Raleway";
+    }
+  }
+  .footer .information p {
+    padding-right: 0rem;
+  }
+  .container__preview__house .preview__house__image .house__title {
+    text-align: right;
+    padding: 1rem;
+    transform: translateX(0%);
+  }
+  .container__preview__house .preview__house__image .house__image img {
+    transform: translateX(08%);
+    width: 100%;
+    height: 100%;
+  }
+  .container__gallery .gallery .gallery__image {
+    background-color: #c5c5c5;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .container__blueprints .blueprints__title .blueprints__icon .icon__card {
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__blueprints .blueprints__title {
+    padding: 1rem;
+  }
+  .container__video .video__wrap {
+    border-radius: 0;
+  }
+  .container__video .video__wrap .video__titles {
+    text-align: center;
+    gap: 1rem;
+    display: grid;
+    place-items: center;
+  }
+  .container__video .video__wrap .video__titles span {
+    margin-bottom: 1rem;
+  }
+  .title_fa__banner {
+    font-size: 55px;
+  }
+  .banner__controls {
+    padding: 0 1rem 0rem 0;
+  }
+  .container__preview__house .card__house {
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .btn__reserva {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
