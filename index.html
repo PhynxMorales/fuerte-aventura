@@ -24,7 +24,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body justify-content-center align-items-center d-flex p-0 m-0">
-          <video class="w-100 rounded-1" controls>
+          <video class="w-100 rounded-1" controls id="videoTour">
             <source loading="lazy" src="./assets/videos/Recorrido.mp4">
           </video>
         </div>
@@ -32,8 +32,17 @@
     </div>
   </div>
 
+  <div class="whatsapp-button">
+    <a href="https://api.whatsapp.com/send?phone=NUMERO_DE_TELEFONO" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 16 16">
+        <path fill="white"
+          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144l-2.494.654l.666-2.433l-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931a6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646c-.182-.065-.315-.099-.445.099c-.133.197-.513.646-.627.775c-.114.133-.232.148-.43.05c-.197-.1-.836-.308-1.592-.985c-.59-.525-.985-1.175-1.103-1.372c-.114-.198-.011-.304.088-.403c.087-.088.197-.232.296-.346c.1-.114.133-.198.198-.33c.065-.134.034-.248-.015-.347c-.05-.099-.445-1.076-.612-1.47c-.16-.389-.323-.335-.445-.34c-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654c0 .977.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992c.47.205.84.326 1.129.418c.475.152.904.129 1.246.08c.38-.058 1.171-.48 1.338-.943c.164-.464.164-.86.114-.943c-.049-.084-.182-.133-.38-.232z" />
+      </svg>
+    </a>
+  </div>
+
   <section class="container-fluid container__banner">
-    <header id="mainHeader" class="header-fa d-flex flex-wrap  ">
+    <header id="mainHeader" class="header-fa d-flex flex-wrap">
       <a href="/"
         class="d-flex align-items-center  mb-md-0 me-md-auto text-dark text-decoration-none wow animate__animated animate__fadeInDown">
         <img id="logo-fa" src="./assets/logo-blanco.svg" alt="">
@@ -64,7 +73,7 @@
       <div class="offcanvas offcanvas-end text-bg-fa" tabindex="-1" id="offcanvasNavbarDark"
         aria-labelledby="offcanvasNavbarDarkLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title title_fa" id="offcanvasNavbarDarkLabel">Fuerte Aventura</h5>
+          <h5 class="offcanvas-title title_fa" id="offcanvasNavbarDarkLabel">Fuerte Ventura</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
         </div>
@@ -82,15 +91,38 @@
                 <div class="wow animate__animated animate__fadeInLeft">
                   <span>Facíl es llegar aquí, difícil de irse</span>
                   <h1 class="title_fa__banner">Encuentra tu nuevo hogar en San Luis Potosí</h1>
-                  <p class="subtitle_fa__baner">Encuentra tu hogar ideal: descubre nuestras casas a la venta y encuentra
+                  <p class="subtitle_fa__banner">Encuentra tu hogar ideal: descubre nuestras casas a la venta y
+                    encuentra
                     el lugar perfecto para ti
                     y
                     tu
                     familia.
                   </p>
-                  <button class="btn__primary_fa">
-                    <a href="">Solicita Informes</a>
-                  </button>
+                  <div class="row fa__buttons">
+                    <div class="col-12 col-md-6 col-xl-5">
+                      <button class="btn__primary_fa">
+                        <a href="">Solicita Informes</a>
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                      <button class="btn__primary_fa__play ">
+                        <a data-toggle="modal" data-bs-toggle="modal" data-bs-target="#videoFuerteAventura"
+                          class="contact__play">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                            <mask id="ipSPlay0">
+                              <g fill="none" stroke-linejoin="round" stroke-width="4">
+                                <path fill="#fff" stroke="#fff"
+                                  d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z" />
+                                <path fill="#000" stroke="#000" d="M20 24v-6.928l6 3.464L32 24l-6 3.464l-6 3.464V24Z" />
+                              </g>
+                            </mask>
+                            <path fill="white" d="M0 0h48v48H0z" mask="url(#ipSPlay0)" />
+                          </svg>
+                          Encuentranos
+                        </a>
+                      </button>
+                    </div>
+                  </div>
                 </div>
 
               </div>
@@ -113,7 +145,6 @@
                     <a href="">Ver todos los Modelos</a>
                   </button>
                 </div>
-
               </div>
             </div>
           </div>
@@ -155,7 +186,7 @@
       <div class="col-12 col-md-6 col-xl-6 advantage__title">
         <h3 class="title_fa">La mejor ubicación para tu nueva residencia</h3>
         <figure>
-          <img src="./assets/home/ventajas_1.jpeg" alt="Beneficios de comprar casa en San Luis Potosí">
+          <img src="./assets/centro_comercial.jpeg" alt="Beneficios de comprar casa en San Luis Potosí">
         </figure>
       </div>
       <div class="col-12 col-md-6 col-xl-6 advantage__description">
@@ -266,7 +297,7 @@
                   </figure>
                 </div>
                 <div class="card__house__body">
-                  <span class="house__body__price ">$2,400,000 <span>/ se acepta credito</span></span>
+                  <span class="house__body__price ">$2,400,000 <span>/ solicita tu hipoteca</span></span>
                   <span class="house__body__model">Modelos Valencia</span>
                 </div>
                 <div class="card__house__footer">
@@ -325,12 +356,13 @@
                   </div>
                 </div>
                 <button class="btn__reserva"> Agenda una visita
-                  <div class="icon">
+                  <a target="_blank" href="https://calendly.com/reeps98/fuerte-ventura?month=2023-08&date=2023-08-07"
+                    class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
                       <path fill="currentColor"
                         d="M480 128a64 64 0 0 0-64-64h-16V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 368 48v16H144V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 112 48v16H96a64 64 0 0 0-64 64v12a4 4 0 0 0 4 4h440a4 4 0 0 0 4-4ZM32 416a64 64 0 0 0 64 64h320a64 64 0 0 0 64-64V179a3 3 0 0 0-3-3H35a3 3 0 0 0-3 3Zm344-208a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Z" />
                     </svg>
-                  </div>
+                  </a>
                 </button>
               </div>
             </div>
@@ -343,7 +375,7 @@
                   </figure>
                 </div>
                 <div class="card__house__body">
-                  <span class="house__body__price ">$2,525,000<span>/ se acepta credito</span></span>
+                  <span class="house__body__price ">$2,525,000<span>/ solicita tu hipoteca</span></span>
                   <span class="house__body__model">Modelo Canary</span>
                 </div>
                 <div class="card__house__footer">
@@ -361,7 +393,23 @@
                             </g>
                           </svg>
                         </span>
-                        <span class="info">2 baños</span>
+                        <span class="info">2 baños completos</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3 card__houses">
+                      <div class="house__footer__card">
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="none">
+                              <path fill="currentColor"
+                                d="M20 14v-2H4v2c0 1.138.583 3.248 2.745 3.841c.37.102.787.159 1.255.159h8a4.71 4.71 0 0 0 1.255-.159C19.417 17.248 20 15.138 20 14z" />
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 12h1m16 0v0a1 1 0 0 0 1-1V7c0-1-.6-3-3-3s-3 2-3 3m5 5v2c0 1.138-.583 3.248-2.745 3.841M20 12H4m0 0v2c0 1.138.583 3.248 2.745 3.841M6 20l.745-2.159m0 0c.37.102.787.159 1.255.159h8a4.71 4.71 0 0 0 1.255-.159M18 20l-.745-2.159M15 7h-2m2 0h2" />
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="info">2 medio baños</span>
                       </div>
                     </div>
                     <div class="col-6 col-md-3 col-xl-3 card__houses">
@@ -373,21 +421,10 @@
                               clip-rule="evenodd" />
                           </svg>
                         </span>
-                        <span class="info">1 Garage</span>
+                        <span class="info">2 Cocheras para autos</span>
                       </div>
                     </div>
-                    <div class="col-6 col-md-3 col-xl-3 card__houses">
-                      <div class="house__footer__card">
-                        <span class="icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                            <path fill="currentColor" fill-rule="evenodd"
-                              d="M.5 0a.5.5 0 0 0-.5.5v14a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V5h9.5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5H.5ZM1 4.075V1h3.075v3.075H1Zm0 .85V14h3v-1.075H2.75a.425.425 0 1 1 0-.85H4v-1.15H2.25a.425.425 0 0 1 0-.85H4v-1.15H2.75a.425.425 0 1 1 0-.85H4v-1.15H2.75a.425.425 0 1 1 0-.85H4v-1.15H1ZM4.925 4h1.15V2.75a.425.425 0 0 1 .85 0V4h1.15V2.75a.425.425 0 0 1 .85 0V4h1.15V2.25a.425.425 0 1 1 .85 0V4h1.15V2.75a.425.425 0 0 1 .85 0V4H14V1H4.925v3Z"
-                              clip-rule="evenodd" />
-                          </svg>
-                        </span>
-                        <span class="info">200m2</span>
-                      </div>
-                    </div>
+
                     <div class="col-6 col-md-3 col-xl-3 card__houses">
                       <div class="house__footer__card">
                         <span class="icon">
@@ -402,12 +439,12 @@
                   </div>
                 </div>
                 <button class="btn__reserva"> Agenda una visita
-                  <div class="icon">
+                  <a href="https://calendly.com/reeps98/fuerte-ventura?month=2023-08&date=2023-08-07" class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
                       <path fill="currentColor"
                         d="M480 128a64 64 0 0 0-64-64h-16V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 368 48v16H144V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 112 48v16H96a64 64 0 0 0-64 64v12a4 4 0 0 0 4 4h440a4 4 0 0 0 4-4ZM32 416a64 64 0 0 0 64 64h320a64 64 0 0 0 64-64V179a3 3 0 0 0-3-3H35a3 3 0 0 0-3 3Zm344-208a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Z" />
                     </svg>
-                  </div>
+                  </a>
                 </button>
               </div>
             </div>
@@ -420,7 +457,7 @@
                   </figure>
                 </div>
                 <div class="card__house__body">
-                  <span class="house__body__price ">$2,635,00<span>/ se acepta credito</span></span>
+                  <span class="house__body__price ">$2,635,00<span>/ solicita tu hipoteca</span></span>
                   <span class="house__body__model">Modelo Tenerife</span>
                 </div>
                 <div class="card__house__footer">
@@ -479,12 +516,12 @@
                   </div>
                 </div>
                 <button class="btn__reserva"> Agenda una visita
-                  <div class="icon">
+                  <a href="https://calendly.com/reeps98/fuerte-ventura?month=2023-08&date=2023-08-07" class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
                       <path fill="currentColor"
                         d="M480 128a64 64 0 0 0-64-64h-16V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 368 48v16H144V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 112 48v16H96a64 64 0 0 0-64 64v12a4 4 0 0 0 4 4h440a4 4 0 0 0 4-4ZM32 416a64 64 0 0 0 64 64h320a64 64 0 0 0 64-64V179a3 3 0 0 0-3-3H35a3 3 0 0 0-3 3Zm344-208a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Z" />
                     </svg>
-                  </div>
+                  </a>
                 </button>
               </div>
             </div>
@@ -497,7 +534,7 @@
                   </figure>
                 </div>
                 <div class="card__house__body">
-                  <span class="house__body__price ">$2,850,000<span>/ se acepta credito</span></span>
+                  <span class="house__body__price ">$2,850,000<span>/ solicita tu hipoteca</span></span>
                   <span class="house__body__model">Modelo Oliva</span>
                 </div>
                 <div class="card__house__footer">
@@ -556,12 +593,12 @@
                   </div>
                 </div>
                 <button class="btn__reserva"> Agenda una visita
-                  <div class="icon">
+                  <a href="https://calendly.com/reeps98/fuerte-ventura?month=2023-08&date=2023-08-07" class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
                       <path fill="currentColor"
                         d="M480 128a64 64 0 0 0-64-64h-16V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 368 48v16H144V48.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 112 48v16H96a64 64 0 0 0-64 64v12a4 4 0 0 0 4 4h440a4 4 0 0 0 4-4ZM32 416a64 64 0 0 0 64 64h320a64 64 0 0 0 64-64V179a3 3 0 0 0-3-3H35a3 3 0 0 0-3 3Zm344-208a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm-80-80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Zm0 80a24 24 0 1 1-24 24a24 24 0 0 1 24-24Z" />
                     </svg>
-                  </div>
+                  </a>
                 </button>
               </div>
             </div>
@@ -742,7 +779,7 @@
       </div>
       <div class="col-12 col-md-2 col-xl-2 video__play">
         <div class="play__video wow animate__animated animate__pulse animate__repeat-3">
-          <a data-toggle="modal" data-bs-toggle="modal" data-bs-target="#videoFuerteAventura">
+          <a data-toggle="modal" data-bs-toggle="modal" data-bs-target="#videoFuerteAventura" class="contact__play">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
               <mask id="ipSPlay0">
                 <g fill="none" stroke-linejoin="round" stroke-width="4">
@@ -777,22 +814,20 @@
                 esta empresa a cualquiera que busque una casa en un entorno familiar y natural.</p>
             </div>
             <div class="carousel-item">
-              <p>2 La casa que visité superó mis expectativas. Estaba ubicada en un vecindario tranquilo y seguro,
-                perfecto mi
-                familia.
-                Además, tenía acceso a parques y áreas verdes, lo cual era ideal para pasar tiempo al aire libre. Sin
-                duda,
-                recomendaría
-                esta empresa a cualquiera que busque una casa en un entorno familiar y natural.</p>
+              <p>Mi experiencia en la inmobiliaria Fuerteventura fue excepcional. Desde el momento en que ingresé, quedé
+                impresionado por
+                la profesionalidad y la amabilidad del personal. Me brindaron una cálida bienvenida y se mostraron
+                dispuestos a escuchar
+                mis necesidades y preferencias.</p>
             </div>
             <div class="carousel-item">
-              <p>3 La casa que visité superó mis expectativas. Estaba ubicada en un vecindario tranquilo y seguro,
-                perfecto mi
-                familia.
-                Además, tenía acceso a parques y áreas verdes, lo cual era ideal para pasar tiempo al aire libre. Sin
-                duda,
-                recomendaría
-                esta empresa a cualquiera que busque una casa en un entorno familiar y natural.</p>
+              <p>En general, mi visita a Fuerteventura superó mis expectativas. No solo obtuve información valiosa sobre
+                el mercado
+                inmobiliario local, sino que también experimenté un servicio al cliente excepcional. Si estás buscando
+                adquirir una
+                propiedad en Fuerteventura, definitivamente recomendaría visitar esta inmobiliaria. Su enfoque
+                profesional y amigable
+                hace que el proceso de búsqueda de vivienda sea mucho más agradable y efectivo.</p>
             </div>
           </div>
 
@@ -851,9 +886,10 @@
             <div class="col-6">
               <select name="modeloCasa" id="">
                 <option value="" selected disabled>Modelo de casa</option>
-                <option value=""> Modelo 1</option>
-                <option value=""> Modelo 2</option>
-                <option value=""> Modelo 3</option>
+                <option value="Modelos Valencia"> Modelos Valencia</option>
+                <option value="Modelo Canary"> Modelo Canary</option>
+                <option value="Modelo Tenerife"> Modelo Tenerife</option>
+                <option value="Modelo Oliva"> Modelo Oliva</option>
               </select>
             </div>
             <div class="col-12">
@@ -967,6 +1003,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"></script>
+  <!--Scripts JQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <script src="./js/main.js"></script>
   <script src="./js/wow.min.js"></script>
