@@ -32,7 +32,7 @@ p {
   position: fixed;
   justify-content: center;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 0rem 3rem;
   top: 0;
   left: 0;
 }
@@ -96,6 +96,57 @@ p {
   color: hsl(0, 0%, 0%);
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.btn__primary_fa__play {
+  font-family: "Hammersmith-one";
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+}
+.btn__primary_fa__play a {
+  color: hsl(0, 0%, 100%) !important;
+  text-decoration: none;
+}
+
+.whatsapp-button {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+  background-color: #25d366;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  z-index: 999;
+}
+
+.show-top {
+  transition: all 0.2s ease-in-out;
+  width: 60px;
+  height: 60px;
+}
+.show-top a {
+  cursor: pointer;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.whatsapp-button img {
+  width: 60%;
+  height: auto;
 }
 
 .text-bg-fa {
@@ -171,7 +222,7 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
-.subtitle_fa__baner {
+.subtitle_fa__banner {
   font-size: 18px;
 }
 
@@ -211,7 +262,7 @@ p {
   background-size: cover;
 }
 .container__banner .carousel-item:nth-child(2) {
-  background: url("../assets/home/banner_2.jpeg");
+  background: url("../assets/home/banner_3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -362,7 +413,7 @@ p {
 }
 .container__preview__house .card__house .card__house__header figure {
   background-color: #c5c5c5;
-  height: 300px;
+  height: 350px;
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
@@ -429,6 +480,7 @@ p {
 }
 .container__preview__house .card__house .card__house__footer .house__footer__card .info {
   font-size: 13px;
+  text-align: center;
 }
 .container__preview__house .preview__house__image .house__title {
   text-align: right;
@@ -633,11 +685,18 @@ p {
 }
 .container__contact .contact__form input::-moz-placeholder, .container__contact .contact__form textarea::-moz-placeholder, .container__contact .contact__form select::-moz-placeholder {
   color: hsl(0, 0%, 0%);
+  font-family: "Hammersmith-one";
 }
 .container__contact .contact__form input::placeholder,
 .container__contact .contact__form textarea::placeholder,
 .container__contact .contact__form select::placeholder {
   color: hsl(0, 0%, 0%);
+  font-family: "Hammersmith-one";
+}
+.container__contact .contact__form input:optional,
+.container__contact .contact__form textarea:optional,
+.container__contact .contact__form select:optional {
+  font-family: "Hammersmith-one";
 }
 .container__contact .contact__form textarea {
   min-height: 300px;
@@ -748,6 +807,9 @@ p {
 }
 
 @media screen and (max-width: 570px) {
+  .fa__buttons .btn__primary_fa {
+    margin: 1rem 0;
+  }
   #logo-fa {
     width: 8rem;
   }

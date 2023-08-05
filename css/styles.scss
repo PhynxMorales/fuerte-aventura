@@ -38,7 +38,7 @@ p {
   position: fixed;
   justify-content: center;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 0rem 3rem;
   top: 0;
   left: 0;
   .nav-pills {
@@ -104,6 +104,53 @@ p {
     text-transform: uppercase;
     font-weight: 600;
   }
+}
+.btn__primary_fa__play {
+  font-family: "Hammersmith-one";
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  a {
+    color: $white !important;
+    text-decoration: none;
+  }
+}
+.whatsapp-button {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+  background-color: #25d366;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  z-index: 999;
+}
+.show-top {
+  transition: all 0.2s ease-in-out;
+  width: 60px;
+  height: 60px;
+  a {
+    cursor: pointer;
+  }
+}
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.whatsapp-button img {
+  width: 60%;
+  height: auto;
 }
 .text-bg-fa {
   background-color: $dark_blue !important;
@@ -176,7 +223,7 @@ p {
   font-size: 75px;
   font-family: "Raleway", sans-serif;
 }
-.subtitle_fa__baner {
+.subtitle_fa__banner {
   font-size: 18px;
 }
 // Banner
@@ -214,7 +261,7 @@ p {
       background-size: cover;
     }
     &:nth-child(2) {
-      background: url("../assets/home/banner_2.jpeg");
+      background: url("../assets/home/banner_3.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -382,7 +429,7 @@ p {
       position: relative;
       figure {
         background-color: #c5c5c5;
-        height: 300px;
+        height: 350px;
         width: 100%;
         overflow: hidden;
         border-radius: 10px;
@@ -450,6 +497,7 @@ p {
         }
         .info {
           font-size: 13px;
+          text-align: center;
         }
       }
     }
@@ -671,6 +719,10 @@ p {
       border-radius: 10px;
       &::placeholder {
         color: $dark;
+        font-family: "Hammersmith-one";
+      }
+      &:optional {
+        font-family: "Hammersmith-one";
       }
     }
     textarea {
@@ -792,6 +844,11 @@ p {
 }
 //mobile
 @media screen and (max-width: 570px) {
+  .fa__buttons {
+    .btn__primary_fa {
+      margin: 1rem 0;
+    }
+  }
   #logo-fa {
     width: 8rem;
   }
